@@ -9,9 +9,9 @@ var scrape = function (cb) {
         console.log(body);
         var articles = [];
         
-        $('.site-content').each(function(i, element){
-            var head =$(this).children('.feed.feed-list').text().trim();
-            var sum =$(this).children('.full-item-content').text().trim();
+        $('.full-item-content').each(function(i, element){
+            var head =$(this).children('.full-item-title.item-title').text().trim();
+            var sum =$(this).children('.full-item-dek.item-dek').text().trim();
 
             if(head && sum){
                 var headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();

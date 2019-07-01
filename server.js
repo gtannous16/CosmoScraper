@@ -13,6 +13,9 @@ var app = express();
 //set up express router
 var router = express.Router();
 
+//require routes file to pass router object
+require("./config/routes")(router);
+
 //designate public folder as static directory
 app.use(express.static(__dirname + "/public"));
 
@@ -21,6 +24,7 @@ app.engine("handlebars", expressHandlebars({
     defaultLayout: "main"
 }));
 app.set("view engine", "handlebars");
+
 
 //use bodyParser
 app.use(bodyParser.urlencoded({

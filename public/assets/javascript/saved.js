@@ -151,7 +151,7 @@ $(document).ready(function(){
         }
     }
 
-    function handleNoteDelet() {
+    function handleNoteDelete() {
         var noteToDelete = $(this).data("_id");
         $.ajax({
             url: "/api/notes/" + noteToDelete,

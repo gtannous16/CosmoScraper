@@ -78,6 +78,6 @@ module.exports = function(router) {
     router.post("/api/notes", function(req, res){
         notesController.save(req.body, function(data){
             res.json(data);
-        })
-    })
+        });
+    });
 }

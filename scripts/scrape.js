@@ -6,12 +6,12 @@ var cheerio = require("cheerio");
 var scrape = function (cb) {
     request("https://www.cosmopolitan.com/", function(err, res, body){
         var $ = cheerio.load(body);
-        
+        console.log(body);
         var articles = [];
-
-        $(".full-item").each(function(i, element){
-            var head =$(this).children(".full-item-title").text().trim();
-            var sum =$(this).children(".full-item-dek").text().trim();
+        
+        $('.site-content').each(function(i, element){
+            var head =$(this).children('.feed.feed-list').text().trim();
+            var sum =$(this).children('.full-item-content').text().trim();
 
             if(head && sum){
                 var headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();

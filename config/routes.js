@@ -25,7 +25,6 @@ module.exports = function(router) {
                 });
             }
             else {
-                scrape();
                 res.json({
                     message: "Added " + docs.insertedCount + "new articles!"
                 });

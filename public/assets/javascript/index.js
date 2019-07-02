@@ -26,10 +26,13 @@ $(document).ready(function(){
 
     function renderArticles(articles) {
         var articlePanels = [];
-
+        console.log(articles);
         for (var i = 0; i < articles.length; i++) {
             articlePanels.push(createPanel(articles[i]));
         }
+        articlePanels.forEach(articlePanel => {
+            $(".article-container").append(articlePanel);
+        });
     }
 
     function createPanel(article) {

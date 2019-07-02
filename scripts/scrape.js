@@ -6,7 +6,6 @@ var cheerio = require("cheerio");
 var scrape = function (cb) {
     request("https://www.cosmopolitan.com/", function(err, res, body){
         var $ = cheerio.load(body);
-        console.log(body);
         var articles = [];
         
         $('.full-item-content').each(function(i, element){

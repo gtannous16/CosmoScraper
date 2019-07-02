@@ -12,6 +12,7 @@ a{
 .btn{
     background-color: rgb(230,112,177);
     color: white;
+    margin-left: 10px;
 }
 .btn:hover{
     background-color: #e51c23;

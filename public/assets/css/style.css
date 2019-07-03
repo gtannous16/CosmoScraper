@@ -5,6 +5,9 @@ h3,.panel-default>.panel-heading{
     color:white;
     background-color:rgb(230,112,177);
 }
+.navbar-inverse .navbar-brand:hover{
+    background-color:#e51c23;
+}
 a{
     background-color: rgb(230,112,177);
     color: white;

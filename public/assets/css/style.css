@@ -9,8 +9,26 @@ a{
     background-color: rgb(230,112,177);
     color: white;
 }
+a.btn.btn-success.save{
+    background-color: rgb(237,43,141);
+}
+a.btn.btn-danger.delete,a.btn.btn-info.notes{
+    background-color: rgb(237,43,141);
+}
+a.btn.btn-success.save:hover{
+    background-color: #e51c23;
+}
+a.btn.btn-danger.delete,a.btn.btn-info.notes:hover{
+    background-color: #e51c23;
+}
 button.btn.btn-success.save{
     background-color:#e51c23;
+}
+.btn-primary:hover, .btn-primary:active:hover{
+    background-color: #e51c23;
+}
+.btn-primary:active{
+    background-image: radial-gradient(circle, #843960 10%, #aa4caf 11%) !important;
 }
 .btn-success:active{
     background-image: radial-gradient(circle, #843960 10%, #aa4caf 11%);
@@ -23,6 +41,13 @@ button.btn.btn-success.save{
 .btn:hover{
     background-color: #e51c23;
     color: white;
+}
+.nav.navbar-nav,a.btn.btn-danger.scrape-new{
+    font-size: 20px;
+}
+.panel-body{
+    font-size:18px;
+    color:rgb(237,43,141);
 }
 .navbar-inverse .navbar-nav>.active>a:hover{
     background-color: #e51c23;

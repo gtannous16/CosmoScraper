@@ -10,7 +10,7 @@ a{
     color: white;
 }
 button.btn.btn-success.save{
-    background-image: radial-gradient(circle, #843960 10%, #aa4caf 11%);
+    background-color:#e51c23;
 }
 .btn-success:active{
     background-image: radial-gradient(circle, #843960 10%, #aa4caf 11%);
